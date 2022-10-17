@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(214, 235, 255);
+    text-align: center;
+}
+.flex{
+    height: 150px;
+    margin: auto;
+    background-color: rgb(197, 197, 197);
+    width: 60%;
+}
+
+#flexContainer{
+    animation: pulse 2.5s infinite;
+}
+#flexCenter{
+    justify-content: center;
+}
+.box{
+    background-color: rgb(173, 217, 255);
+    height: 60px;
+    width: 20%;
+    display: flex;
+    font-size: xxx-large;
+    justify-content: center;
+    margin: 20px;
+}
+.center{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes pulse{
+    0%{
+      transform: scale(.9);
+
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+      transform: scale(.9);
+    }
+}
+
+.centerex {
+    width: 70%;
+    border: 2px solid #000;
+    margin: auto;
+    display: flex;
+}
+
+.ex{
+    background-color: rgb(173, 217, 255);
+    flex: 1;
+    height: 60px;
+    transition: flex .25s, background-color .5s;
+    border: rgb(183, 136, 226) 1px dashed;
+    font-size: xxx-large;
+}
+.ex:hover{
+    background-color: rgb(129, 201, 201);
+    flex: 2;
+}
