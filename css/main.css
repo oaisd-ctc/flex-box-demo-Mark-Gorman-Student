@@ -3,26 +3,45 @@ body{
     text-align: center;
 }
 .flex{
-    height: 150px;
+    height: fit-content;
     margin: auto;
     background-color: rgb(197, 197, 197);
-    width: 60%;
+    width: 80vw;
+    padding: 2vmin;
+    margin-bottom: 2vmin;
 }
-
+h3{
+    font-size: 2.5vmin;
+}
+h2{
+    font-size: 3vmin;
+}
 #flexContainer{
     animation: pulse 2.5s infinite;
 }
 #flexCenter{
     justify-content: center;
 }
+#flexLeft{
+    justify-content: flex-start;
+}
+#flexRight{
+    justify-content: flex-end;
+}
+#around{
+    justify-content: space-around;
+}
+#between{
+    justify-content: space-between;
+}
 .box{
     background-color: rgb(173, 217, 255);
-    height: 60px;
-    width: 20%;
+    height: 6vmin;
+    width: 10%;
     display: flex;
-    font-size: xxx-large;
+    font-size: 5vmin;
     justify-content: center;
-    margin: 20px;
+    margin: 2%;
 }
 .center{
     width: 90%;
@@ -55,10 +74,10 @@ body{
 .ex{
     background-color: rgb(173, 217, 255);
     flex: 1;
-    height: 60px;
+    height: 6vmin;
     transition: flex .25s, background-color .5s;
     border: rgb(183, 136, 226) 1px dashed;
-    font-size: xxx-large;
+    font-size: 5vmin;
 }
 .ex:hover{
     background-color: rgb(129, 201, 201);
