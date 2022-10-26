@@ -16,8 +16,17 @@ h3{
 h2{
     font-size: 3vmin;
 }
-#flexContainer{
+#pulse{
     animation: pulse 2.5s infinite;
+}
+#hue{
+    animation: hue 5s infinite;
+}
+#spin{
+    animation: spin 1s infinite;
+}
+#spin:hover{
+    
 }
 #flexCenter{
     justify-content: center;
@@ -61,6 +70,16 @@ h2{
     }
     100%{
       transform: scale(.9);
+    }
+}
+@keyframes hue{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes spin {
+    100%{
+        transform: rotatez(360deg);
     }
 }
 
