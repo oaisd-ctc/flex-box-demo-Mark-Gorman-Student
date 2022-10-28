@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>George</title>
+    <script>
+        function playSound(soundfile) {
+          document.getElementById("dummy").innerHTML=
+            "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+        }
+        </script>
+</head>
+
+<body>
+    <span id="dummy"></span>
+    <div class="flex">
+        <h2>KeyFrames</h2>
+        <div  id="pulse">
+            <h2>Pulse</h2>
+            <div class="center">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </div>
+        <div  id="hue">
+            <h2>Hue Rotate</h2>
+            <div class="center">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </div>
+        <div  id="spin" onmouseover="playSound('Dead.mp3')">
+            <h2>Spin</h2>
+            <div class="center">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </div>
+    </div>
+    <div class="flex" id="extraCredit">
+        <h2>Extra Credit</h2>
+        <div class="centerex">
+            <div class="ex">1</div>
+            <div class="ex">2</div>
+            <div class="ex">3</div>
+        </div>
+    </div>
+    <div class="flex" id="justify">
+        <h2>Justify Content</h2>
+        <h3>Center</h3>
+        <div class="center" id="flexCenter">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>flex-start</h3>
+        <div class="center" id="flexLeft">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>flex-end</h3>
+        <div class="center" id="flexRight">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>space-around</h3>
+        <div class="center" id="around">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>space-betweeen</h3>
+        <div class="center" id="between">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+
+</html>
